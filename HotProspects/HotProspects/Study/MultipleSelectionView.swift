@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct MultipleSelectionView: View {
+    let users = ["Totoro", "Chany", "BoJack", "Dwarf"]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(users, id: \.self) { user in
+            Text(user)
+        }
     }
 }
 
