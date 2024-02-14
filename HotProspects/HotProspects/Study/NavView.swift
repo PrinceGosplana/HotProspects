@@ -11,7 +11,9 @@ struct NavView: View {
     var body: some View {
         TabView {
             Text("Tab 1")
+                .tabItem { Label("One", systemImage: "star") }
             Text("Tab 2")
+                .tabItem { Label("Two", systemImage: "circle") }
         }
     }
 }
