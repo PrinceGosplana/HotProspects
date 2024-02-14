@@ -12,6 +12,7 @@
 		95BD62622B7B281C00D6CC6F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BD62612B7B281C00D6CC6F /* Assets.xcassets */; };
 		95BD62652B7B281C00D6CC6F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95BD62642B7B281C00D6CC6F /* Preview Assets.xcassets */; };
 		95BD626C2B7C705600D6CC6F /* MultipleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD626B2B7C705600D6CC6F /* MultipleSelectionView.swift */; };
+		95BD626F2B7C745B00D6CC6F /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD626E2B7C745B00D6CC6F /* NavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		95BD62612B7B281C00D6CC6F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95BD62642B7B281C00D6CC6F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		95BD626B2B7C705600D6CC6F /* MultipleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionView.swift; sourceTree = "<group>"; };
+		95BD626E2B7C745B00D6CC6F /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				95BD626B2B7C705600D6CC6F /* MultipleSelectionView.swift */,
+				95BD626E2B7C745B00D6CC6F /* NavView.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BD626F2B7C745B00D6CC6F /* NavView.swift in Sources */,
 				95BD626C2B7C705600D6CC6F /* MultipleSelectionView.swift in Sources */,
 				95BD62602B7B281900D6CC6F /* ContentView.swift in Sources */,
 				95BD625E2B7B281900D6CC6F /* HotProspectsApp.swift in Sources */,
