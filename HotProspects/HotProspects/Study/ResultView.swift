@@ -24,6 +24,7 @@ struct ResultView: View {
             let readings = try JSONDecoder().decode([Double].self, from: data)
             output = "Found \(readings.count) readings"
         }
+        let result = await fetchTask.result
     }
 }
 
