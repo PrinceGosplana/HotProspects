@@ -26,9 +26,10 @@ struct ResultView: View {
         }
         let result = await fetchTask.result
         
-        do {
-            output = try result.get()
-        } catch {
+        switch result {
+        case .success(let string):
+            output = string
+        case .failure(let error):
             output = "Error \(error.localizedDescription)"
         }
     }
