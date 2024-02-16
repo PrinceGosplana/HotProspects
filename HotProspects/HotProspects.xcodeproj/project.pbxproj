@@ -14,6 +14,7 @@
 		95BD626C2B7C705600D6CC6F /* MultipleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD626B2B7C705600D6CC6F /* MultipleSelectionView.swift */; };
 		95BD626F2B7C745B00D6CC6F /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD626E2B7C745B00D6CC6F /* NavView.swift */; };
 		95BD62712B7E922F00D6CC6F /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD62702B7E922F00D6CC6F /* ResultView.swift */; };
+		95BD62732B7F167000D6CC6F /* ImageInterpolationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95BD62722B7F167000D6CC6F /* ImageInterpolationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		95BD626B2B7C705600D6CC6F /* MultipleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectionView.swift; sourceTree = "<group>"; };
 		95BD626E2B7C745B00D6CC6F /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		95BD62702B7E922F00D6CC6F /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		95BD62722B7F167000D6CC6F /* ImageInterpolationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageInterpolationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				95BD626B2B7C705600D6CC6F /* MultipleSelectionView.swift */,
 				95BD626E2B7C745B00D6CC6F /* NavView.swift */,
 				95BD62702B7E922F00D6CC6F /* ResultView.swift */,
+				95BD62722B7F167000D6CC6F /* ImageInterpolationView.swift */,
 			);
 			path = Study;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				95BD626F2B7C745B00D6CC6F /* NavView.swift in Sources */,
 				95BD626C2B7C705600D6CC6F /* MultipleSelectionView.swift in Sources */,
 				95BD62712B7E922F00D6CC6F /* ResultView.swift in Sources */,
+				95BD62732B7F167000D6CC6F /* ImageInterpolationView.swift in Sources */,
 				95BD62602B7B281900D6CC6F /* ContentView.swift in Sources */,
 				95BD625E2B7B281900D6CC6F /* HotProspectsApp.swift in Sources */,
 			);
