@@ -10,6 +10,7 @@ import SwiftUI
 struct ImageInterpolationView: View {
     var body: some View {
         Image(.example)
+            .interpolation(.none)
             .resizable()
             .scaledToFit()
             .background(.black)
