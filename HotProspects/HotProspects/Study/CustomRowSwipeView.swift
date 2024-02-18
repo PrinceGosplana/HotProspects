@@ -20,6 +20,7 @@ struct CustomRowSwipeView: View {
                     Button("Pin", systemImage: "pin") {
                         print("Pinning")
                     }
+                    .tint(.orange)
                 }
         }
     }
