@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import UserNotifications
 
 struct LocalNotificationView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button("Request Permission") {
+                // first
+            }
+            
+            Button("Schedult Notification") {
+                // second
+            }
+        }
     }
 }
 
