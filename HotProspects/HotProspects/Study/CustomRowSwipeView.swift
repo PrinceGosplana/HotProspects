@@ -15,9 +15,10 @@ struct CustomRowSwipeView: View {
                     Button("Delete", systemImage: "minus.cirle", role: .destructive) {
                         print("Delete")
                     }
-                    
-                    Button("Send message", systemImage: "message") {
-                        print("Hi")
+                }
+                .swipeActions(edge: .leading) {
+                    Button("Pin", systemImage: "pin") {
+                        print("Pinning")
                     }
                 }
         }
