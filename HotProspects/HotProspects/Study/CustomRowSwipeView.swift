@@ -12,6 +12,10 @@ struct CustomRowSwipeView: View {
         List {
             Text("Taylor Swift")
                 .swipeActions {
+                    Button("Delete", systemImage: "minus.cirle", role: .destructive) {
+                        print("Delete")
+                    }
+                    
                     Button("Send message", systemImage: "message") {
                         print("Hi")
                     }
