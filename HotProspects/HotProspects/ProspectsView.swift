@@ -5,6 +5,7 @@
 //  Created by OLEKSANDR ISAIEV on 20.02.2024.
 //
 
+import SwiftData
 import SwiftUI
 
 struct ProspectsView: View {
@@ -12,6 +13,8 @@ struct ProspectsView: View {
         case none, contacted, uncontacted
     }
     
+    @Environment(\.modelContext) var modelContext
+    @Query(sort: \Prospect.name) var prospects: [Prospect]
     let filter: FilterType
     
     var title: String {
@@ -35,4 +38,5 @@ struct ProspectsView: View {
 
 #Preview {
     ProspectsView(filter: .none)
+        .modelContainer(for: Prospect.self)
 }
