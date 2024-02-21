@@ -22,6 +22,7 @@
 		95CFD6332B849BA700F61710 /* SamplePackageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFD6322B849BA700F61710 /* SamplePackageView.swift */; };
 		95CFD6352B849D6F00F61710 /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFD6342B849D6F00F61710 /* ProspectsView.swift */; };
 		95CFD6372B849DAA00F61710 /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFD6362B849DAA00F61710 /* MeView.swift */; };
+		95CFD6392B863C6700F61710 /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CFD6382B863C6700F61710 /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		95CFD6322B849BA700F61710 /* SamplePackageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePackageView.swift; sourceTree = "<group>"; };
 		95CFD6342B849D6F00F61710 /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		95CFD6362B849DAA00F61710 /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		95CFD6382B863C6700F61710 /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				95BD626D2B7C70A400D6CC6F /* Study */,
 				95BD625D2B7B281900D6CC6F /* HotProspectsApp.swift */,
 				95BD625F2B7B281900D6CC6F /* ContentView.swift */,
+				95CFD6382B863C6700F61710 /* Prospect.swift */,
 				95CFD6342B849D6F00F61710 /* ProspectsView.swift */,
 				95CFD6362B849DAA00F61710 /* MeView.swift */,
 				95BD62612B7B281C00D6CC6F /* Assets.xcassets */,
@@ -186,6 +189,7 @@
 				95CFD6372B849DAA00F61710 /* MeView.swift in Sources */,
 				95BD626F2B7C745B00D6CC6F /* NavView.swift in Sources */,
 				95CFD6332B849BA700F61710 /* SamplePackageView.swift in Sources */,
+				95CFD6392B863C6700F61710 /* Prospect.swift in Sources */,
 				95CFD62C2B822E2400F61710 /* CustomRowSwipeView.swift in Sources */,
 				95BD626C2B7C705600D6CC6F /* MultipleSelectionView.swift in Sources */,
 				95BD62712B7E922F00D6CC6F /* ResultView.swift in Sources */,
