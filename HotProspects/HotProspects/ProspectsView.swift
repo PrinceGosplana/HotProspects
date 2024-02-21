@@ -30,8 +30,14 @@ struct ProspectsView: View {
     
     var body: some View {
         NavigationStack {
-            Text("Hello, World!")
+            Text("People \(prospects.count)")
                 .navigationTitle(title)
+                .toolbar {
+                    Button("Scan", systemImage: "qrcode.viewfinder") {
+                        let prospect = Prospect(name: "Go", emailAddress: "go@com.ua", isContacted: false)
+                        modelContext.insert(prospect)
+                    }
+                }
         }
     }
 }
