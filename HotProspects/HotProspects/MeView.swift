@@ -27,6 +27,9 @@ struct MeView: View {
                     .font(.title)
                 
                 Image(uiImage: generateQRCode(from: "\(name)\n\(emailAddress)"))
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
             }
             .navigationTitle("Your code")
         }
