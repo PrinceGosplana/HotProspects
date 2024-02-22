@@ -8,8 +8,22 @@
 import SwiftUI
 
 struct MeView: View {
+    @AppStorage("name") private var name = "Anonymous"
+    @AppStorage("emailAddress") private var emailAddress = "you@email.address"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Form {
+                TextField("Name", text: $name)
+                    .textContentType(.name)
+                    .font(.title)
+                
+                TextField("Email address", text: $emailAddress)
+                    .textContentType(.emailAddress)
+                    .font(.title)
+            }
+            .navigationTitle("Your code")
+        }
     }
 }
 
