@@ -15,6 +15,7 @@ struct ProspectsView: View {
     
     @Environment(\.modelContext) var modelContext
     @Query(sort: \Prospect.name) var prospects: [Prospect]
+    @State private var isShowingScanner = false
     let filter: FilterType
     
     var title: String {
@@ -42,8 +43,7 @@ struct ProspectsView: View {
             .navigationTitle(title)
             .toolbar {
                 Button("Scan", systemImage: "qrcode.viewfinder") {
-                    let prospect = Prospect(name: "Go", emailAddress: "go@com.ua", isContacted: false)
-                    modelContext.insert(prospect)
+                    isShowingScanner = true
                 }
             }
         }
