@@ -47,6 +47,9 @@ struct ProspectsView: View {
                     isShowingScanner = true
                 }
             }
+            .sheet(isPresented: $isShowingScanner) {
+                CodeScannerView(codeTypes: [.qr], simulatedData: "Zak Hud\nzac@dot.com", completion: handleScan)
+            }
         }
     }
     
