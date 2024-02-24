@@ -40,6 +40,13 @@ struct ProspectsView: View {
                     Text(prospect.emailAddress)
                         .foregroundStyle(.secondary)
                 }
+                .swipeActions {
+                    if prospect.isContacted {
+                        Button("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark") {
+                            prospect.isContacted.toggle()
+                        }
+                    }
+                }
             }
             .navigationTitle(title)
             .toolbar {
