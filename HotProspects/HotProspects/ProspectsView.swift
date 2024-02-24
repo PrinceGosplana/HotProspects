@@ -5,6 +5,7 @@
 //  Created by OLEKSANDR ISAIEV on 20.02.2024.
 //
 
+import CodeScanner
 import SwiftData
 import SwiftUI
 
@@ -59,6 +60,10 @@ struct ProspectsView: View {
                 $0.isContacted == showContactedOnly
             }, sort: [SortDescriptor(\Prospect.name)])
         }
+    }
+    
+    func handleScan(result: Result<ScanResult, ScanError>) {
+        isShowingScanner = false
     }
 }
 
