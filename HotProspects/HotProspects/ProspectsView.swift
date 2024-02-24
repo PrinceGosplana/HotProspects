@@ -67,6 +67,19 @@ struct ProspectsView: View {
     
     func handleScan(result: Result<ScanResult, ScanError>) {
         isShowingScanner = false
+        
+        switch result {
+        case .success(let success):
+            let details = success.string.components(separatedBy: "\n")
+            guard details.count == 2 else { return }
+            
+            let person = Prospect(name: details[0],
+                                  emailAddress: details[1],
+                                  isContacted: false)
+            modelContext.insert(person)
+        case .failure(let failure):
+            print("Scanning failed: \(failure.localizedDescription)")
+        }
     }
 }
 
