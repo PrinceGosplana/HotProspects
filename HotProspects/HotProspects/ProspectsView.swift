@@ -63,8 +63,10 @@ struct ProspectsView: View {
             }
             .navigationTitle(title)
             .toolbar {
-                Button("Scan", systemImage: "qrcode.viewfinder") {
-                    isShowingScanner = true
+                ToolbarItem(placement: .topBarLeading) {
+                    Button("Scan", systemImage: "qrcode.viewfinder") {
+                        isShowingScanner = true
+                    }
                 }
                 
                 ToolbarItem(placement: .topBarLeading) {
@@ -73,7 +75,7 @@ struct ProspectsView: View {
                 
                 if selectedProspects.isEmpty == false {
                     ToolbarItem(placement: .bottomBar) {
-                        Button("Delete selected", action: delete())
+                        Button("Delete selected", action: delete)
                     }
                 }
             }
