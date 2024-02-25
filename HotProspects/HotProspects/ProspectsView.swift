@@ -66,6 +66,16 @@ struct ProspectsView: View {
                 Button("Scan", systemImage: "qrcode.viewfinder") {
                     isShowingScanner = true
                 }
+                
+                ToolbarItem(placement: .topBarLeading) {
+                    EditButton()
+                }
+                
+                if selectedProspects.isEmpty == false {
+                    ToolbarItem(placement: .bottomBar) {
+                        Button("Delete selected", action: delete())
+                    }
+                }
             }
             .sheet(isPresented: $isShowingScanner) {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Zak Hud\nzac@dot.com", completion: handleScan)
