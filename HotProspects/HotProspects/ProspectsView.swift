@@ -44,25 +44,30 @@ struct ProspectsView: View {
                         .foregroundStyle(.secondary)
                 }
                 .swipeActions {
-                    Button("Delete", systemImage: "trash", role: .destructive) {
+                    Button("Delete", 
+                           systemImage: "trash",
+                           role: .destructive) {
                         modelContext.delete(prospect)
                     }
                     
                     if prospect.isContacted {
-                        Button("Mark Uncontacted", systemImage: "person.crop.circle.badge.xmark") {
+                        Button("Mark Uncontacted", 
+                               systemImage: "person.crop.circle.badge.xmark") {
                             prospect.isContacted.toggle()
                         }
-                        .tint(.blue)
+                               .tint(.blue)
                     } else {
-                        Button("Mark Contacted", systemImage: "person.crop.circle.badge.checkmark") {
+                        Button("Mark Contacted", 
+                               systemImage: "person.crop.circle.badge.checkmark") {
                             prospect.isContacted.toggle()
                         }
-                        .tint(.green)
+                               .tint(.green)
                         
-                        Button("Remind me", systemImage: "bell") {
+                        Button("Remind me", 
+                               systemImage: "bell") {
                             addNotification(for: prospect)
                         }
-                        .tint(.orange)
+                               .tint(.orange)
                     }
                 }
                 .tag(prospect)
@@ -70,7 +75,8 @@ struct ProspectsView: View {
             .navigationTitle(title)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
-                    Button("Scan", systemImage: "qrcode.viewfinder") {
+                    Button("Scan", 
+                           systemImage: "qrcode.viewfinder") {
                         isShowingScanner = true
                     }
                 }
@@ -81,12 +87,15 @@ struct ProspectsView: View {
                 
                 if selectedProspects.isEmpty == false {
                     ToolbarItem(placement: .bottomBar) {
-                        Button("Delete selected", action: delete)
+                        Button("Delete selected", 
+                               action: delete)
                     }
                 }
             }
             .sheet(isPresented: $isShowingScanner) {
-                CodeScannerView(codeTypes: [.qr], simulatedData: "Zak Hud\nzac@dot.com", completion: handleScan)
+                CodeScannerView(codeTypes: [.qr], 
+                                simulatedData: "Zak Hud\nzac@dot.com",
+                                completion: handleScan)
             }
         }
     }
